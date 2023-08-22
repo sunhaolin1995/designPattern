@@ -1,4 +1,4 @@
-package com.chetuan.iterator;
+package com.chetuan.Iterator;
 
 
 public class IteratorMain {
@@ -9,7 +9,8 @@ public class IteratorMain {
         bookShelf.appendBook(new Book("2222"));
         bookShelf.appendBook(new Book("3333"));
         bookShelf.appendBook(new Book("4444"));
-
+        bookShelf.appendBook(new Book("5555"));
+        bookShelf.appendBook(new Book("6666"));
         Iterator iterator = bookShelf.iterator();
         while (iterator.hasNext()){
             Book next = (Book)iterator.next();

@@ -1,4 +1,4 @@
-package com.chetuan.iterator;
+package com.chetuan.Iterator;
 
 
 public class BookShelfIterator implements Iterator{

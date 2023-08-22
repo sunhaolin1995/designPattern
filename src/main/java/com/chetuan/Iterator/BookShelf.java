@@ -1,6 +1,6 @@
-package com.chetuan.iterator;
+package com.chetuan.Iterator;
 
-import java.security.spec.DSAPrivateKeySpec;
+import java.util.ArrayList;
 
 /**
  * @author 孙浩林
@@ -8,20 +8,20 @@ import java.security.spec.DSAPrivateKeySpec;
  */
 public class BookShelf implements Aggregate{
 
-   private Book[] books;
+   private  ArrayList<Book> books;
 
    private int last =0;
 
    public BookShelf(int maxsize){
-       this.books = new Book[maxsize];
+       this.books = new ArrayList<>(maxsize);
    }
 
    public Book getBookAt(int index){
-       return books[index];
+       return books.get(index);
    }
 
    public void appendBook(Book book){
-       this.books[last] = book;
+       this.books.add(book);
        last++;
    }
 
