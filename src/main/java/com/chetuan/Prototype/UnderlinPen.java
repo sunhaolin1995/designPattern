@@ -15,9 +15,9 @@ public class UnderlinPen implements Product {
     public void use(String s) {
         int length = s.getBytes().length;
         System.out.println("\"" + s + "\"");
-        System.out.println(" ");
+        System.out.print(" ");
         for (int i = 0; i < length; i++) {
-            System.out.println(ulchar);
+            System.out.print(ulchar);
         }
         System.out.println("");
     }
